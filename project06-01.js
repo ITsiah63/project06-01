@@ -10,12 +10,15 @@
       Filename: project06-01.js
 */
 
+/* declaring the variables */
 let submitButton = document.getElementById("submitButton");
 let pwd = document.getElementById("pwd");
 let pwd2 = document.getElementById("pwd2");
 
+/* creating an event listener */
 submitButton.addEventListener("click", anonymous);
 
+/* if else function in the anonymous function */
 function anonymous() {
       if (document.getElementById("pwd").validity.rangeUnderflow) {
             text = ("Your password must be at least 8 characters with at least one letter and number");
